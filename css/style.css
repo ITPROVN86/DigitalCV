@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section>.container {
+    width: 1170px;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+#banner {
+    position: relative;
+}
+
+#banner img {
+    max-width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+}
+
+/* Add a black background color to the top navigation */
+#nav-bar {
+    background-color: #e9e8e8;
+    border: 1px solid #efefef;
+   /* overflow: hidden;*/
+}
+
+#nav-bar .container {
+    padding: 0px;
+    width: fit-content;
+}
+
+#nav-bar .container i {
+    color: blue;
+}
+
+/* Style the links inside the navigation bar */
+#nav-bar a {
+    float: left;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#nav-bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Hai cột bằng nhau */
+    /*justify-items: center;  Căn giữa nội dung theo chiều ngang */
+    gap: 0px;
+    /* Khoảng cách giữa các phần tử */
+}
+
+#about #target {
+    padding: 20px;
+    /* Padding để tạo khoảng cách với viền ngoài */
+    background-color: #f2f2f2;
+    /* Màu nền để phân biệt */
+}
+
+#about #personal-info {
+    padding: 20px;
+    /* Padding để tạo khoảng cách với viền ngoài */
+    background-color: #e7e6e6;
+    /* Màu nền để phân biệt */
+}
+
+#personal-info ul.info li {
+    list-style: none;
+    padding: 0px;
+}
+
+#target h1,
+#personal-info h1 {
+    padding-bottom: 20px;
+}
+
+#job-info .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Chia thành 3 cột */
+    gap: 20px;
+    /* Khoảng cách giữa các cột */
+    background-color: #ffffff;
+}
+
+#job-info .container .job-header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* Chia thành 2 cột, cột trái chiếm 75%, cột phải chiếm 25% */
+    padding: 0px;
+    margin: 0px;
+}
+
+#job-info div {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.job-icon i {
+    font-size: 24pt;
+}
+
+.job-body {
+    margin: 0px !important;
+    line-height: 150%;
+}
+
+.job-body h2 {
+    padding-bottom: 10px;
+}
+
+.rectangle {
+    background-color: rgb(54, 54, 255);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+#favorite .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+
+#favorite .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#favorite .circle {
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+#favorite .container i {
+    font-size: 30px;
+    /* Điều chỉnh kích thước của icon */
+    color: blue;
+}
+
+#favorite .text {
+    margin-top: 10px;
+}
+
+#language span.active,
+#skill span.active {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+#language span,
+#skill span {
+    background: #838383;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+.certificate-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.certificate-body:nth-child(2){
+    border-bottom: 2px solid orange;
+}
+
+.certificate-body .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certificate-body .image img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+
+.certificate-body .text {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#nav-bar img {
+    border-radius: 50%;
+    border: 10px solid white;
+    position: relative;
+    z-index: 9;
+    /* padding: 20px; */
+    margin: -50%;
+    max-width: 100%;
+    width: 100px;
+}
+
+.project-body {
+    display: flex;
+    gap: 20px;
+}
+
+#project img {
+    max-width: 100%;
+}
+
+.item {
+    flex: 1;
+}
+
+.project-table th,
+.project-table td {
+    border: 1px solid #efefef;
+    padding: 10px;
+    text-align: left;
+}
+
+.year {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    display: inline;
+}
+#footer{
+    text-align: center;
+}
+#footer li {
+    display: inline-block
+}
+
+#footer li i {
+    color: blue;
+    font-size: 24pt;
+}
+
+#footer li a {
+    text-decoration: none;
+}
+.item-even {
+    border-left: 2px solid orange;
+    padding-left: 10px;
+  }
+  .skill-card .view-button {
+    display: none;
+    margin-top: 10px;
+    background-color: #cfb000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .skill-card:hover .view-button {
+    display: block;
+  }
+
+  .skill-details {
+    display: none;
+  }
+  
+  .skill-details.active {
+    display: block;
+  }
