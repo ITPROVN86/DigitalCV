@@ -320,3 +320,75 @@ section>.container {
   .skill-details.active {
     display: block;
   }
+  #project a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #project a:hover{
+    background-color: #c8c8c8;
+    color: #7668f5;
+  }
+  #digital{
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    
+  }
+  #digital .container{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    background-color: blue;
+  }
+  .goal, .scopes, .team, .timeline {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .goal .item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-bottom: 1px dotted #1b1b1b;
+  }
+  .team .item, .timeline .item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 6px;
+  }
+  .goal-flag, .team-icon {
+    grid-column: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .goal-content, .team-content {
+    grid-column: 2;
+    font-size: 1em;
+  }
+  .goal h3{
+    font-size: 1.2em;
+  }
+  .goal h2, .scopes h2, .team h2{
+    color: blue;
+    border-bottom: 1px dotted #1b1b1b;
+  }
+  .scopes .scopes-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .team h3, .timeline h3{
+    font-size: 1.2em;
+  }
+  .timeline .timeline-number{
+    background-color: rgb(180, 10, 177);
+    padding: 10px;
+    border:1px solid purple;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 50px;
+    height:50px;
+    margin: 20px;
+  }

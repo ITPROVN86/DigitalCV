@@ -62,3 +62,32 @@ section>.container {
 .certificate-body .image img {
     width: 100%;
 }
+
+#digital{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.goal .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px dotted #1b1b1b;
+  }
+  .goal-flag, .team-icon {
+    grid-column: 1;
+    text-align: center;
+  }
+  
+  .goal-content, .team-content {
+    grid-column: 1;
+  }
+  .scopes .scopes-body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .team .item, .timeline .item, .timeline .item{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .timeline .timeline-number{
+    margin: 0 auto;
+  }
